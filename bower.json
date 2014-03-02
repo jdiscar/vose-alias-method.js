@@ -1,0 +1,16 @@
+{
+  "name": "vose-alias-method",
+  "version": "1.0.0",
+  "ignore": [
+    "**/.*",
+		"test",
+		"vose-alias-method-min.js",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "~1.9.0"
+  }
+}
