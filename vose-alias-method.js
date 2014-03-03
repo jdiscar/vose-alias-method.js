@@ -104,6 +104,11 @@
 		this.probabilityLength = probabilities.length;
 		average = 1.0 / this.probabilityLength;
 		
+		// There should be some probabilities
+		if( this.probabilityLength <= 0 ) {
+			throw new Error("Empty probabilities array");
+		}
+		
 		// Probabilities should be all numeric
 		for ( i = 0; i < this.probabilityLength; i++ ) {
 			if(isNaN(parseFloat(probabilities[i])) || !isFinite(probabilities[i])) {

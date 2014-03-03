@@ -8,13 +8,13 @@ describe('VoseAliasMethod', function() {
 			assert.throws(function() { new VoseAliasMethod() }, Error);
 		});			
 
-		//it('Empty Input', function() {
-		//	assert.throws(function() { new VoseAliasMethod([]) }, Error);
-		//});
+		it('Empty Input', function() {
+			assert.throws(function() { new VoseAliasMethod([]) }, Error);
+		});
 
-		//it('Non Numeric Input', function() {
-		//	assert.throws(function() { new VoseAliasMethod(["a","monkey"]) }, Error);
-		//});
+		it('Non Numeric Input', function() {
+			assert.throws(function() { new VoseAliasMethod(["a","monkey"]) }, Error);
+		});
 	});
 	
 	describe("#Bad Inputs", function() {
